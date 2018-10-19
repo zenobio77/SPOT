@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginwallpaper">
+
+        <ImageView
+            android:id="@+id/loginlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/loginlogo"
+            android:paddingBottom="5dp"
+            android:paddingHorizontal="5dp"
+            android:elevation="10dp"
+            android:background="@drawable/shadow"
+            android:layout_marginTop="70dp"/>
+
+        <TableLayout
+            android:id="@+id/loginEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginlogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <TableRow
+                android:background="@drawable/tintbackground"
+                android:paddingHorizontal="100dp"
+                android:layout_margin="5dp"
+                android:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/loginemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#FFFFFF"
+                    android:hint="E-mail"
+                    android:textColor="#FFFFFF"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/tintbackground"
+                android:paddingHorizontal="100dp"
+                android:layout_margin="5dp"
+                android:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/loginpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:inputType="textPassword"
+                    android:textColorHint="#FFFFFF"
+                    android:hint="Password"
+                    android:textColor="#FFFFFF"/>
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginEditText"
+            android:layout_margin="50dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/loginEmailButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="17dp"
+                android:text="Sing Up with e-mail"
+                android:textColor="#ff6347" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginEmailButton"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logingooglelogo"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
