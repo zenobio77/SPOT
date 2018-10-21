@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/loginEditText"
             android:layout_centerHorizontal="true"
-            android:layout_margin="30dp"
+            android:layout_marginVertical="15dp"
             android:padding="17dp"
             android:text="Sing Up with e-mail"
             android:textColor="#ff6347" />
@@ -94,16 +94,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/loginEmailButton"
+            android:layout_alignParentBottom="true"
             android:background="@drawable/shadow">
 
             <TextView
                 android:id="@+id/loginTextView"
                 android:width="1000dp"
+                android:paddingVertical="10dp"
                 android:textAlignment="center"
                 android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Or try one of these resources"
+                android:text="Or try one of these resources:"
                 android:textColor="#FFFFFF"/>
 
             <ImageView
